@@ -353,7 +353,9 @@
     <![endif]-->
 
     <div class="custom-header" ng-controller="HeaderFooter">
-      <img class="custom-header-logo" ng-src="{{headerLogoUrl}}"/>
+      <div class="custom-header-identity">
+        <img class="custom-header-logo" ng-src="{{headerLogoUrl}}"/>  
+      </div>
       <a ng-href="{{backUrl}}" class="custom-header-back-url">{{backUrlLabel}}</a>
       <div class="custom-header-login-prompt">{{loginPromptText}}</div>
     </div>
@@ -369,7 +371,6 @@
     </div>
 
     <div class="custom-footer" ng-controller="HeaderFooter">
-      <div class="custom-footer-join-prompt">{{joinPromptText}}</div>
       <div class="custom-footer-disclaimer">{{disclaimerText}}</div>
     </div>
 
