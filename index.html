@@ -352,12 +352,12 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="custom-header" ng-controller="HeaderFooter" ng-cloak>
+    <div class="custom-header" ng-controller="HeaderFooter">
       <div class="custom-header-identity">
         <img class="custom-header-logo" ng-src="{{headerLogoUrl}}"/>  
       </div>
-      <a ng-href="{{backUrl}}" class="custom-header-back-url" ng-bind-html="backUrlLabel"></a>
-      <div class="custom-header-login-prompt"  ng-bind-html="loginPromptText"></div>
+      <a ng-href="{{backUrl}}" class="custom-header-back-url">{{backUrlLabel}}</a>
+      <div class="custom-header-login-prompt">{{loginPromptText}}</div>
     </div>
 
     <div class="container" ng-controller="ErrorCtrl" ng-cloak>
@@ -370,8 +370,8 @@
       </div>
     </div>
 
-    <div class="custom-footer" ng-controller="HeaderFooter" ng-cloak>
-      <div class="custom-footer-disclaimer" ng-bind-html="disclaimerText"></div>
+    <div class="custom-footer" ng-controller="HeaderFooter">
+      <div class="custom-footer-disclaimer">{{disclaimerText}}</div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
