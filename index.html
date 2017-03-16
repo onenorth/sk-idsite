@@ -356,8 +356,8 @@
       <div class="custom-header-identity">
         <img class="custom-header-logo" ng-src="{{headerLogoUrl}}"/>  
       </div>
-      <a ng-href="{{backUrl}}" class="custom-header-back-url" >{{backUrlLabel}}</a>
-      <div class="custom-header-login-prompt">{{loginPromptText}}</div>
+      <a ng-href="{{backUrl}}" class="custom-header-back-url" ng-bind-html="backUrlLabel"></a>
+      <div class="custom-header-login-prompt"  ng-bind-html="loginPromptText"></div>
     </div>
 
     <div class="container" ng-controller="ErrorCtrl" ng-cloak>
@@ -371,7 +371,7 @@
     </div>
 
     <div class="custom-footer" ng-controller="HeaderFooter" ng-cloak>
-      <div class="custom-footer-disclaimer">{{disclaimerText}}</div>
+      <div class="custom-footer-disclaimer" ng-bind-html="disclaimerText"></div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
